@@ -4,6 +4,8 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 var mongoose = require('mongoose');
 
+app.use(express.static(__dirname+ '/client'));
+
 //connect to mongoose
 mongoose.connect('mongodb://localhost/bookstore',function(err){
     if(err)
