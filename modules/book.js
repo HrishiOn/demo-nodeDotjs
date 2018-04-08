@@ -20,6 +20,9 @@ var BooksSchema = mongoose.Schema({
     view_url:{
         type:String
     },
+    buy_url:{
+        type:String
+    },
     create_date:{
         type:Date,
         default:Date.now
